@@ -94,7 +94,7 @@ import { Builder, By, Key, until } from "selenium-webdriver";
     await driver.findElement(By.name("date_of_birth")).sendKeys("20-05-2005");
     await driver
       .findElement(By.name("email"))
-      .sendKeys("craig-reddin@hotmail.com");
+      .sendKeys("craigreddin@hotmail.com");
     await driver.findElement(By.name("student_type")).sendKeys("Student");
     await driver
       .findElement(By.name("course_name"))

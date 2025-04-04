@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
   });
 
   useEffect(() => {
-    // Function to update isAuthenticated when sessionStorage changes
+    // Function to update isAuthenticated when sessionStorage changes - enforcing IsAuthenticated to
     const handleStorageChange = () => {
       setIsAuthenticated(sessionStorage.getItem("SignedIn") === "true");
     };

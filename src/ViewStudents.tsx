@@ -16,31 +16,28 @@ interface StudentsData {
 }
 
 function AllStudents() {
-  // Initialize form state with type
+  // Initialise form state with type
   const [formData, setFormData] = useState<StudentsData[]>([]);
   const [currentStudent, setCurrentStudent] = useState(0);
   //Used to navigate to the update page
   const navigate = useNavigate();
 
-  // Handles input changes
-  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
   useEffect(() => {
     loadStudents();
   }, []);
 
-  // Function to load recipes using fetchRecipes function.
+  // Function to load students.
   const loadStudents = async () => {
+    const token = sessionStorage.getItem("token");
+
     try {
       const response = await fetch("https://127.0.0.1:5000/students", {
         method: "GET",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        credentials: "include",
       });
       const data = await response.json();
       setFormData(data);
@@ -51,7 +48,7 @@ function AllStudents() {
 
   const currentStudentIs = formData[currentStudent];
 
-  //increases the currentRecipe Index
+  //increases the currentStudent Index
   const handleNext = () => {
     if (currentStudent === formData.length - 1) {
       alert("There are no more next students");
@@ -89,7 +86,7 @@ function AllStudents() {
     }
   };
 
-  //decreses the currentRecipe Index
+  //decreses the currentStudent Index
   const handlePrevious = () => {
     if (currentStudent == 0) {
       alert("There are no more previous students");
@@ -123,7 +120,6 @@ function AllStudents() {
             name="name"
             placeholder="Enter full name"
             value={currentStudentIs.name}
-            onChange={handleChange}
             readOnly
           />
         </Form.Group>
@@ -136,7 +132,6 @@ function AllStudents() {
             type="date"
             name="date_of_birth"
             value={currentStudentIs.date_of_birth}
-            onChange={handleChange}
             readOnly
           />
         </Form.Group>
@@ -150,7 +145,6 @@ function AllStudents() {
             name="email"
             placeholder="Enter email"
             value={currentStudentIs.email}
-            onChange={handleChange}
             readOnly
           />
         </Form.Group>
@@ -163,7 +157,6 @@ function AllStudents() {
             as="select"
             name="student_type"
             value={currentStudentIs.student_type || ""}
-            onChange={handleChange}
             readOnly
           >
             <option value="">Select Type</option>
@@ -181,7 +174,6 @@ function AllStudents() {
             name="course_name"
             placeholder="Enter course name"
             value={currentStudentIs.course_name}
-            onChange={handleChange}
             readOnly
           />
         </Form.Group>
@@ -195,7 +187,6 @@ function AllStudents() {
             name="course_code"
             placeholder="Enter course code"
             value={currentStudentIs.course_code}
-            onChange={handleChange}
             readOnly
           />
         </Form.Group>

@@ -7,7 +7,8 @@ import { signIn } from "./Services";
 
 function SignIn() {
   const navigate = useNavigate();
-  const { setIsAuthenticated } = useAuth(); // Get authentication state
+  // Get authentication state
+  const { setIsAuthenticated } = useAuth();
   interface AdminData {
     email: string;
     password: string;
@@ -36,6 +37,10 @@ function SignIn() {
       if (response) {
         const data = await response.json();
         if (response.ok) {
+          console.log(response);
+          if (data.token) {
+            sessionStorage.setItem("token", data.token);
+          }
           alert("Sign In was Successful!");
           sessionStorage.setItem("SignedIn", "true");
           setIsAuthenticated(true);
@@ -46,7 +51,7 @@ function SignIn() {
         }
       }
     } catch (error) {
-      alert("Error while Signing In")
+      alert("Error while Signing In");
     }
   };
 
@@ -84,7 +89,6 @@ function SignIn() {
             required
           />
         </Form.Group>
-
         <Button className="create-submit-button" type="submit">
           Submit
         </Button>
