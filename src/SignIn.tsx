@@ -29,7 +29,6 @@ function SignIn() {
     console.log(formData.email);
     console.log(formData.password);
 
-
     displayUserInput();
     try {
       const response = await fetch("http://127.0.0.1:5000/sign_in", {
@@ -54,7 +53,7 @@ function SignIn() {
     }
   };
 
-  // XSS Vulnerability: Directly rendering user input in the UI without escaping
+  // XSS Vulnerability: Directly rendering user input in the UI without sanitising
   const displayUserInput = () => {
     return (
       <div
