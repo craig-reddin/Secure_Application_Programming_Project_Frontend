@@ -40,6 +40,10 @@ function AllStudents() {
         credentials: "include",
       });
       const data = await response.json();
+      console.log(data);
+      if (data.error) {
+        return;
+      }
       setFormData(data);
     } catch (error) {
       alert("Error fetching Students");
@@ -67,6 +71,7 @@ function AllStudents() {
         if (response) {
           if (response.ok) {
             alert("Student Deleted");
+
             const updatedStudents = formData.filter(
               (student) => student.id !== currentStudentIs.id
             );
