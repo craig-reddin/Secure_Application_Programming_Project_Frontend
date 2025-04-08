@@ -37,7 +37,6 @@ function SignIn() {
       if (response) {
         const data = await response.json();
         if (response.ok) {
-          console.log(response);
           if (data.token) {
             sessionStorage.setItem("token", data.token);
           }

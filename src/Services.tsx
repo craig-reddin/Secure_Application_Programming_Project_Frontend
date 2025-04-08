@@ -19,7 +19,6 @@ export async function createStudent(data: any) {
 export async function updateStudent(url: any, data: any) {
   try {
     const token = sessionStorage.getItem("token");
-    console.log("JWT Token:", data.token); // Print in console
     const response = await fetch(url, {
       method: "PUT",
       headers: {
