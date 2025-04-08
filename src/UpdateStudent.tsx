@@ -14,7 +14,7 @@ interface StudentData {
 
 function StudentUpdateForm() {
   const navigate = useNavigate();
-  // Extract the ID from the URL
+  // Extract the Id from the URL
   const { id } = useParams<{ id: string }>();
 
   // State for managing form data
@@ -97,26 +97,6 @@ function StudentUpdateForm() {
     }
   };
 
-  // XSS Vulnerability: Directly rendering user input in the UI without escaping
-  const displayUserInput = () => {
-    return (
-      <div>
-        <h2>Entered Information:</h2>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `
-              <p><strong>Name:</strong> ${formData.name}</p>
-              <p><strong>Date of Birth:</strong> ${formData.date_of_birth}</p>
-              <p><strong>Student Type:</strong> ${formData.student_type}</p>
-              <p><strong>Course Name:</strong> ${formData.course_name}</p>
-              <p><strong>Course Code:</strong> ${formData.course_code}</p>
-            `,
-          }}
-        />
-      </div>
-    );
-  };
-
   return (
     <div className="content-container">
       <h1 className="page-headings">Update Student</h1>
@@ -134,7 +114,6 @@ function StudentUpdateForm() {
               placeholder="Enter full name"
               value={formData.name}
               onChange={handleChange}
-
             />
           </Form.Group>
 
@@ -147,7 +126,6 @@ function StudentUpdateForm() {
               name="date_of_birth"
               value={formData.date_of_birth}
               onChange={handleChange}
-
             />
           </Form.Group>
 
@@ -160,7 +138,6 @@ function StudentUpdateForm() {
               name="student_type"
               value={formData.student_type}
               onChange={handleChange}
-
             >
               <option value="">Select Type</option>
               <option value="Student">Student</option>
@@ -178,7 +155,6 @@ function StudentUpdateForm() {
               placeholder="Enter course name"
               value={formData.course_name}
               onChange={handleChange}
-
             />
           </Form.Group>
 
@@ -192,7 +168,6 @@ function StudentUpdateForm() {
               placeholder="Enter course code"
               value={formData.course_code}
               onChange={handleChange}
-
             />
           </Form.Group>
           <br />
@@ -205,7 +180,6 @@ function StudentUpdateForm() {
           </Button>
         </Form>
       )}
-
     </div>
   );
 }

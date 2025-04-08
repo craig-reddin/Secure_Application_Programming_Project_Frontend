@@ -142,7 +142,7 @@ function ViewStudents() {
             placeholder="Enter full name"
             value={currentStudentIs.name}
             onChange={handleChange}
-            readOnly
+
           />
         </Form.Group>
 

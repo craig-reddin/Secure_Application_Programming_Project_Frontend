@@ -55,6 +55,7 @@ function StudentForm() {
     e.preventDefault();
     displayUserInput();
     try {
+      console.log(formData);
       const response = await fetch("http://127.0.0.1:5000/student", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -106,7 +107,8 @@ function StudentForm() {
           <br></br>
           <input
             className="create-form-components"
-            type="date"
+            placeholder="Enter date of birth"
+            type="text"
             id="formDateOfBirth"
             name="date_of_birth"
             value={formData.date_of_birth}

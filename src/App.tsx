@@ -8,6 +8,7 @@ import SignIn from "./SignIn";
 
 function App() {
   return (
+    // Router is required for
     <Router>
       <Navigation />
       <div className="main-content">
