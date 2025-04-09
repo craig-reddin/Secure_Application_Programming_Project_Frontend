@@ -55,7 +55,7 @@ Application Routes
 
     Route	Description
 
-    / :Admin sign in
+    / : Admin sign in
 
     /create : Create student 
 
