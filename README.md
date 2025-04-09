@@ -1,54 +1,98 @@
-# React + TypeScript + Vite
+React Student Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for managing student records built with React, 
 
-Currently, two official plugins are available:
+Vite and in TypeScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
 
-## Expanding the ESLint configuration
+  •	Student record management (create, read, update, delete)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+  •	Admin dashboard
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+  •	Responsive design
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  •	Client-side routing
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+  •	Form validation
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+  •	Route Protection (authentication required)
+
+  •	Session Management
+
+  •	HTTPS/ SSL
+
+Requirements
+
+  •	Node.js 18.0 or higher
+
+  •	npm (Node package manager)
+
+Setup Instructions
+
+  1.	Clone the Repository:
+
+  git clone https://github.com/craig-reddin/
+  Secure_Application_Programming_Project_Frontend.git
+
+  cd Secure_Application_Programming_Project_Frontend
+
+  2.	Install Dependencies: Install all required packages:
+
+  npm install
+
+  3.	HTTPS Implementation: Copy privateKey.pem and server.crt used 
+
+  for Flask API (Link in Backend Integration Section below)and 
+
+  paste into root folder.
+
+  4.	Running the Application:
+
+  npm run dev
+
+  The development server will start at http://localhost:5173 by 
+  default.
+
+Application Routes
+
+  Route	Description
+
+  /	Home page
+
+  /login	Admin login
+
+  /dashboard	Admin dashboard
+
+  /students	List all students
+
+  /student/:id	View/edit specific student
+
+  /add-student	Add new student
+
+Libraries
+
+  •	React (v19.0.0) - JavaScript UI library
+
+  •	React Router DOM (v7.3.0) - Client-side routing
+
+  •	Bootstrap (v5.3.3) - CSS framework
+
+  •	React Bootstrap (v2.10.9) - React implementation of Bootstrap 
+
+  components
+
+Development Tools
+
+  •	TypeScript (v5.7.2) 
+
+  •	Vite (v6.2.0)
+
+  •	ESLint (v9.21.0)
+
+Backend Integration
+
+  The frontend is designed to connect with a student management API 
+  (Link Below). 
+
+  https://github.com/craig-reddin/Secure_Application_Programming_Project_Frontend/tree/main

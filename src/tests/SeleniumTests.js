@@ -9,7 +9,7 @@ import { Builder, By, Key, until } from "selenium-webdriver";
 
     let emailInput = await driver.findElement(By.name("email"));
 
-    // Enter invalid email (missing '@')
+    // Enter invalid email missing @
     await emailInput.sendKeys("patrick012ncistaff.com");
 
     // Check the validity state of the input field
@@ -71,7 +71,7 @@ import { Builder, By, Key, until } from "selenium-webdriver";
 
     let loginAlert = await driver.wait(until.alertIsPresent(), 5000);
 
-    // Get the text of the alert (the success message)
+    // Get the text of the alert the success message
     let alertText = await loginAlert.getText();
 
     if (alertText == "Sign In was Successful!") {
@@ -306,7 +306,6 @@ import { Builder, By, Key, until } from "selenium-webdriver";
     await driver.findElement(By.name("date_of_birth")).click();
     await driver.findElement(By.name("date_of_birth")).clear();
 
-
     await driver.wait(until.elementLocated(By.name("course_name")), 5000);
     await driver.findElement(By.name("course_name")).click();
     await driver.findElement(By.name("course_name")).clear();
@@ -341,8 +340,6 @@ import { Builder, By, Key, until } from "selenium-webdriver";
     }
 
     testNumbers++;
-
-    
 
     let courseNameInputEmpty = await driver.findElement(By.name("course_name"));
     let isEmptyCourseName = await driver.executeScript(
