@@ -21,8 +21,7 @@ Setup Instructions
 
     1.	Clone the Repository:
 
-    git clone https://github.com/craig-reddin/
-    Secure_Application_Programming_Project_Frontend.git
+    git clone https://github.com/craig-reddin/Secure_Application_Programming_Project_Frontend.git
 
     cd Secure_Application_Programming_Project_Frontend
 
@@ -45,7 +44,7 @@ Application Routes
 
     /create : Create student 
 
-    /view_all :	List all students
+    /view_all : List all students
 
     /student/:id : Update student
 
@@ -56,9 +55,9 @@ Libraries
 
     •	React Router DOM (v7.3.0) - Clientside routing
 
-    •	Bootstrap (v5.3.3) - CSS framework
+    •	Bootstrap (v5.3.3) - CSS framework (installed but unused)
 
-    •	React Bootstrap (v2.10.9) - React implementation of Bootstrap components
+
 
 Development Tools
 
@@ -73,4 +72,4 @@ Backend Integration
     The frontend is designed to connect with a student management API 
     (Link Below). 
 
-    https://github.com/craig-reddin/Secure_Application_Programming_Project_Frontend/tree/main
+    https://github.com/craig-reddin/Secure_Application_Programming_Project_Backend/tree/insecure
