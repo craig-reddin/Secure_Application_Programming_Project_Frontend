@@ -30,25 +30,25 @@ Setup Instructions
 
     1.	Clone the Repository:
 
-        git clone https://github.com/craig-reddin/Secure_Application_Programming_Project_Frontend.git
-
-        cd Secure_Application_Programming_Project_Frontend
+            git clone https://github.com/craig-reddin/Secure_Application_Programming_Project_Frontend.git
+    
+            cd Secure_Application_Programming_Project_Frontend
 
     2.	Install Dependencies: Install all required packages:
 
-        npm install
+            npm install
 
-    3.	HTTPS Implementation: Copy privateKey.pem and server.crt files used 
-
-    for Flask API for HTTPS (Link in Backend Integration Section below)and 
-
-    paste into root folder.
+    3.	HTTPS Implementation: 
+    
+        Copy privateKey.pem and server.crt files used  for Flask API for HTTPS (Link in Backend Integration Section below)and 
+    
+        paste into root folder.
 
     4.	Running the Application:
 
-        npm run dev
+            npm run dev
 
-    The development server will start on https://localhost:5173.
+        The development server will start on https://localhost:5173.
 
 Application Routes
 
@@ -70,7 +70,7 @@ Libraries
 
     •	Bootstrap (v5.3.3) - CSS framework
 
-    •	React Bootstrap (v2.10.9) - React implementation of Bootstrap components
+    •	React Bootstrap (v2.10.9) - Reacts implementation of Bootstrap 
 
 Development Tools
 
