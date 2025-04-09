@@ -6,93 +6,91 @@ Vite and in TypeScript.
 
 Features
 
-  •	Student record management (create, read, update, delete)
+    •	Student record management (create, read, update, delete)
 
-  •	Admin dashboard
+    •	Admin dashboard
 
-  •	Responsive design
+    •	Responsive design
 
-  •	Client-side routing
+    •	Client-side routing
 
-  •	Form validation
+    •	Form validation
 
-  •	Route Protection (authentication required)
+    •	Route Protection (authentication required)
 
-  •	Session Management
+    •	Session Management
 
-  •	HTTPS/ SSL
+    •	HTTPS/ SSL
 
 Requirements
 
-  •	Node.js 18.0 or higher
+    •	Node.js 18.0 or higher
 
-  •	npm (Node package manager)
+    •	npm (Node package manager)
 
 Setup Instructions
 
-  1.	Clone the Repository:
+    1.	Clone the Repository:
 
-  git clone https://github.com/craig-reddin/
-  Secure_Application_Programming_Project_Frontend.git
+    git clone https://github.com/craig-reddin/
+    Secure_Application_Programming_Project_Frontend.git
 
-  cd Secure_Application_Programming_Project_Frontend
+    cd Secure_Application_Programming_Project_Frontend
 
-  2.	Install Dependencies: Install all required packages:
+    2.	Install Dependencies: Install all required packages:
 
-  npm install
+    npm install
 
-  3.	HTTPS Implementation: Copy privateKey.pem and server.crt used 
+    3.	HTTPS Implementation: Copy privateKey.pem and server.crt used 
 
-  for Flask API (Link in Backend Integration Section below)and 
+    for Flask API (Link in Backend Integration Section below)and 
 
-  paste into root folder.
+    paste into root folder.
 
-  4.	Running the Application:
+    4.	Running the Application:
 
-  npm run dev
+    npm run dev
 
-  The development server will start at http://localhost:5173 by 
-  default.
+    The development server will start at http://localhost:5173 by 
+    default.
 
 Application Routes
 
-  Route	Description
+    Route	Description
 
-  /	Home page
+    /	Home page
 
-  /login	Admin login
+    /login	Admin login
 
-  /dashboard	Admin dashboard
+    /dashboard	Admin dashboard
 
-  /students	List all students
+    /students	List all students
 
-  /student/:id	View/edit specific student
+    /student/:id	View/edit specific student
 
-  /add-student	Add new student
+    /add-student	Add new student
 
 Libraries
 
-  •	React (v19.0.0) - JavaScript UI library
+    •	React (v19.0.0) - JavaScript UI library
 
-  •	React Router DOM (v7.3.0) - Client-side routing
+    •	React Router DOM (v7.3.0) - Client-side routing
 
-  •	Bootstrap (v5.3.3) - CSS framework
+    •	Bootstrap (v5.3.3) - CSS framework
 
-  •	React Bootstrap (v2.10.9) - React implementation of Bootstrap 
-
-  components
+    •	React Bootstrap (v2.10.9) - React implementation of Bootstrap components
 
 Development Tools
 
-  •	TypeScript (v5.7.2) 
+    •	TypeScript (v5.7.2) 
 
-  •	Vite (v6.2.0)
+    •	Vite (v6.2.0)
 
-  •	ESLint (v9.21.0)
+    •	ESLint (v9.21.0)
 
 Backend Integration
 
-  The frontend is designed to connect with a student management API 
-  (Link Below). 
+    The frontend is designed to connect with a student management API 
+    (Link Below). 
 
-  https://github.com/craig-reddin/Secure_Application_Programming_Project_Frontend/tree/main
+    https://github.com/craig-reddin/Secure_Application_Programming_Project_Frontend/tree/main
