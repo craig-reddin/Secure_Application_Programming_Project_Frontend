@@ -30,40 +30,31 @@ Setup Instructions
 
     npm install
 
-    3.	HTTPS Implementation: Copy privateKey.pem and server.crt used 
-
-    for Flask API (Link in Backend Integration Section below)and 
-
-    paste into root folder.
 
     4.	Running the Application:
 
     npm run dev
 
-    The development server will start at http://localhost:5173 by 
-    default.
+    The development server will start on http://localhost:5173.
 
 Application Routes
 
     Route	Description
 
-    /	Home page
+    / :Admin sign in
 
-    /login	Admin login
+    /create : Create student 
 
-    /dashboard	Admin dashboard
+    /view_all :	List all students
 
-    /students	List all students
+    /student/:id : Update student
 
-    /student/:id	View/edit specific student
-
-    /add-student	Add new student
 
 Libraries
 
     •	React (v19.0.0) - JavaScript UI library
 
-    •	React Router DOM (v7.3.0) - Client-side routing
+    •	React Router DOM (v7.3.0) - Clientside routing
 
     •	Bootstrap (v5.3.3) - CSS framework
 
