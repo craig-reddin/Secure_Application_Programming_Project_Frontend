@@ -49,8 +49,7 @@ Setup Instructions
 
     npm run dev
 
-    The development server will start at http://localhost:5173 by 
-    default.
+    The development server will start on https://localhost:5173.
 
 Application Routes
 
