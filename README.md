@@ -1,8 +1,6 @@
-React Student Management System
+Insecure React Student Management System
 
-A web application for managing student records built with React, 
-
-Vite and in TypeScript.
+A web application for managing student records built with React, Vite and in TypeScript.
 
 Features
 
