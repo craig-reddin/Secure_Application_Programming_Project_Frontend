@@ -6,7 +6,7 @@ Vite and in TypeScript.
 
 Features
 
-    •	Student record management (create, read, update, delete)
+    •	Student record management - create, read, update and delete functionality
 
     •	Admin Sign In
 
@@ -16,7 +16,7 @@ Features
 
     •	Route Protection (authentication required)
 
-    •	Session Management
+    •	Session Management (authentication required)
 
     •	HTTPS/ SSL
 
@@ -30,24 +30,23 @@ Setup Instructions
 
     1.	Clone the Repository:
 
-    git clone https://github.com/craig-reddin/
-    Secure_Application_Programming_Project_Frontend.git
+        git clone https://github.com/craig-reddin/Secure_Application_Programming_Project_Frontend.git
 
-    cd Secure_Application_Programming_Project_Frontend
+        cd Secure_Application_Programming_Project_Frontend
 
     2.	Install Dependencies: Install all required packages:
 
-    npm install
+        npm install
 
-    3.	HTTPS Implementation: Copy privateKey.pem and server.crt used 
+    3.	HTTPS Implementation: Copy privateKey.pem and server.crt files used 
 
-    for Flask API (Link in Backend Integration Section below)and 
+    for Flask API for HTTPS (Link in Backend Integration Section below)and 
 
     paste into root folder.
 
     4.	Running the Application:
 
-    npm run dev
+        npm run dev
 
     The development server will start on https://localhost:5173.
 
