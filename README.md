@@ -8,9 +8,7 @@ Features
 
     •	Student record management (create, read, update, delete)
 
-    •	Admin dashboard
-
-    •	Responsive design
+    •	Admin Sign In
 
     •	Client-side routing
 
