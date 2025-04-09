@@ -55,17 +55,13 @@ Application Routes
 
     Route	Description
 
-    /	Home page
+    / :Admin sign in
 
-    /login	Admin login
+    /create : Create student 
 
-    /dashboard	Admin dashboard
+    /view_all :	List all students
 
-    /students	List all students
-
-    /student/:id	View/edit specific student
-
-    /add-student	Add new student
+    /student/:id : Update student
 
 Libraries
 
