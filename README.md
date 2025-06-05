@@ -84,4 +84,4 @@ Backend Integration
 
     The frontend is designed to connect with a student management API 
     (Link Below). 
-    https://github.com/craig-reddin/Secure_Application_Programming_Project_Backend
+    https://github.com/craig-reddin/Secure_Application_Programming_Project_Backend/tree/main
