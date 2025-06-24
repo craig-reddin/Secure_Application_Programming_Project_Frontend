@@ -31,7 +31,7 @@ function AllStudents() {
     const token = sessionStorage.getItem("token");
 
     try {
-      const response = await fetch("https://107.21.154.169:5000/students", {
+      const response = await fetch("https://devopssecca1.site/students", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -62,7 +62,7 @@ function AllStudents() {
   };
 
   const deleteStudent = async () => {
-    const url = `https://1107.21.154.169:5000/student/${currentStudentIs.id}`;
+    const url = `https://devopssecca1.site/student/${currentStudentIs.id}`;
     try {
       const response = await deleteStudentApi(url);
 

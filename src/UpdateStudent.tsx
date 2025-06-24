@@ -16,7 +16,7 @@ interface StudentData {
 
 function StudentUpdateForm() {
   const { id } = useParams<{ id: string }>();
-  const url = `https://107.21.154.169:5000/student/${id}`;
+  const url = `https://devopssecca1.site/student/${id}`;
   const navigate = useNavigate();
   // Extract the Id from the URL
 
