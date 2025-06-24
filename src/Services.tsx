@@ -1,7 +1,7 @@
 export async function createStudent(data: any) {
   try {
     const token = sessionStorage.getItem("token");
-    const response = await fetch("https://devopssecca1.site/student", {
+    const response = await fetch("https://www.devopssecca1.site/student", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -69,7 +69,7 @@ export async function deleteStudentApi(url: any) {
 
 export async function signIn(data: any) {
   try {
-    const response = await fetch("https://devopssecca1.site/sign_in", {
+    const response = await fetch("https://www.devopssecca1.site/sign_in", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
