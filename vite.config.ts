@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import fs from "fs";
+import react from "@vitejs/plugin-react";
 //https://stackoverflow.com/questions/69417788/vite-https-on-localhost
 export default defineConfig({
   plugins: [react()],
